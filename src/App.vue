@@ -1,22 +1,35 @@
 <script setup>
 import Header from './components/Header.vue';
-import HelloWorld from './components/HelloWorld.vue'
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
-  <div class="min-h-screen bg-slate-200 dark:bg-black dark:text-white">
+  <div class="min-h-screen bg-slate-200 dark:text-white">
     <Header />
-    <main class="container mx-auto px-20">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" class="logo" alt="Vite logo" />
-        </a>
-        <a href="https://vuejs.org/" target="_blank">
-          <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-        </a>
+    <main class="flex-1 mx-auto min-h-screen px-20 pt-32">
+      <div class="items-center justify-center card bg-white w-auto shadow-xl text-black">
+
+        <div class="card-body">
+          <div class="card-title pt-4">
+            <label class="input input-bordered flex items-center gap-2 bg-white">
+              <input type="text" class="grow" placeholder="Search" />
+              <span class="badge badge-info">Optional</span>
+            </label>
+            <p> - </p>
+            <label class="input input-bordered flex items-center gap-2 bg-white">
+              <input type="text" class="grow" placeholder="Search" />
+              <span class="badge badge-info">Optional</span>
+            </label>
+          </div>
+          <div class="divider divider-accent"></div>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
       </div>
-      <HelloWorld msg="Vite + Vue" />
     </main>
+<!--    <Footer />-->
   </div>
 </template>
 
